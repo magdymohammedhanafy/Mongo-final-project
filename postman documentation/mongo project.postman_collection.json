@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "1dfdda53-7123-42c9-9552-eaaa816fd27b",
+		"name": "mongo project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27878270"
+	},
+	"item": [
+		{
+			"name": "creat new product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "authentication",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODg4NjQzNTJ9.S-2Fqrhmds18qCYcWyHI80canviABrhpxpahSm4gEBM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"product4\",\r\n    \"description\":\"SJDFNHJsfnadklfjadklfhjfe\",\r\n    \"price\":25,\r\n    \"quantity\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all products",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authentication",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODg4NjQzNTJ9.S-2Fqrhmds18qCYcWyHI80canviABrhpxpahSm4gEBM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/products/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one product by id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "authentication",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODg4NjQzNTJ9.S-2Fqrhmds18qCYcWyHI80canviABrhpxpahSm4gEBM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/products/64aa069e721721b3f4477d5d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"64aa069e721721b3f4477d5d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "authentication",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODg4NjQzNTJ9.S-2Fqrhmds18qCYcWyHI80canviABrhpxpahSm4gEBM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"magdyyuu mohammed hanafy salemnnmm\",\r\n    \"description\":\"SJDFNHJsfnadklfjadklfhjfe\",\r\n    \"price\":10,\r\n    \"quantity\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/products/64aa069e721721b3f4477d5d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"64aa069e721721b3f4477d5d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "authentication",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2ODg4NjQzNTJ9.S-2Fqrhmds18qCYcWyHI80canviABrhpxpahSm4gEBM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/products/64aa069e721721b3f4477d5d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"products",
+						"64aa069e721721b3f4477d5d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"magdy\",\r\n    \"email\":\"magdy@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"email\":\"magdy@gmail.com\",\r\n    \"password\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add product to user products",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/64aa0645721721b3f4477d59/products/64aa06af721721b3f4477d61",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"64aa0645721721b3f4477d59",
+						"products",
+						"64aa06af721721b3f4477d61"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users/64aa0506721721b3f4477d4c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"64aa0506721721b3f4477d4c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
